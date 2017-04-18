@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="user_properties">
+        <item >ftpserver.user.admin.userpassword=21232F297A57A5A743894A0E4A801FC3</item>
+        <item >ftpserver.user.admin.homedirectory=</item>
+        <item >ftpserver.user.admin.enableflag=true</item>
+        <item >ftpserver.user.admin.writepermission=true</item>
+        <item >ftpserver.user.admin.maxloginnumber=0</item>
+        <item >ftpserver.user.admin.maxloginperip=0</item>
+        <item>ftpserver.user.admin.idletime=0</item>
+        <item>ftpserver.user.admin.uploadrate=0</item>
+        <item>ftpserver.user.admin.downloadrate=0</item>
+        
+        
+        <item >ftpserver.user.kingsoft.userpassword=3b87652ba0916c03c634d5db8558d494</item>
+        <item>ftpserver.user.kingsoft.homedirectory=</item>
+        <item>ftpserver.user.kingsoft.enableflag=true</item>
+        <item>ftpserver.user.kingsoft.writepermission=true</item>
+        <item>ftpserver.user.kingsoft.maxloginnumber=20</item>
+        <item>ftpserver.user.kingsoft.maxloginperip=2</item>
+        <item>ftpserver.user.kingsoft.idletime=300</item>
+        <item>ftpserver.user.kingsoft.uploadrate=480000000</item>
+        <item>ftpserver.user.kingsoft.downloadrate=480000000</item>
+        
+        <item >ftpserver.user.anonymous.userpassword=anonymous</item>
+        <item>ftpserver.user.anonymous.homedirectory=</item>
+        <item>ftpserver.user.anonymous.enableflag=true</item>
+        <item>ftpserver.user.anonymous.writepermission=true</item>
+        <item>ftpserver.user.anonymous.maxloginnumber=20</item>
+        <item>ftpserver.user.anonymous.maxloginperip=2</item>
+        <item>ftpserver.user.anonymous.idletime=300</item>
+        <item>ftpserver.user.anonymous.uploadrate=48000000</item>
+        <item>ftpserver.user.anonymous.downloadrate=48000000</item>
+
+
+    </string-array>
+</resources>

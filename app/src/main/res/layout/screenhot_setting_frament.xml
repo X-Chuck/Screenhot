@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffefebe7">
+    <include layout="@layout/screenhot_settion_title"
+             android:id="@+id/title"/>
+    <LinearLayout 
+        android:id="@+id/bottom_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="5dp">
+        
+        <Button 
+            android:layout_width="80dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:text="@string/screenhot_close_software"
+            android:onClick="onCloseSoftware"/>
+        
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_below="@id/title"
+        android:layout_alignParentStart="true">
+        <LinearLayout 
+            android:id="@+id/delete_pic_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:background="@drawable/screenhot_shape_top"
+            android:padding="5dp"
+            >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/screenhot_deletePic"
+                android:textSize="18sp"
+                android:textColor="@color/screenhot_black"
+                android:gravity="center_vertical"/>
+            
+        </LinearLayout>
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            />
+        <LinearLayout 
+            android:id="@+id/picture_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:padding="5dp"
+            >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/screenhot_picture_path"
+                android:textSize="18sp"
+                android:textColor="@color/screenhot_black"
+                android:gravity="center_vertical"/>
+            <TextView
+                android:id="@+id/picturePath"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a.b.c.d"
+                android:textSize="12sp"
+                android:textColor="@color/screenhot_gary"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+        
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            />
+        <LinearLayout 
+            android:id="@+id/edit_pic"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:padding="5dp"
+            >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/screenhot_edit_pic"
+                android:textSize="18sp"
+                android:textColor="@color/screenhot_black"
+                android:gravity="center_vertical"/>
+            
+        </LinearLayout>
+        
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            />
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/screenhot_shape_button"
+            android:padding="5dp"
+            
+            >
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+                <TextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="2"
+	                android:text="@string/screenhot_StartFtpServer"
+	                android:textSize="18sp"
+	                android:textColor="@color/screenhot_black"
+	                android:gravity="center_vertical"/>
+                <TextView
+	                android:id="@+id/serverip"
+	                android:layout_weight="1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="ftp://10.20.74.66:2222"
+	                android:textSize="12sp"
+	                android:textColor="@color/screenhot_gary"
+	                android:gravity="center_vertical"
+	                android:visibility="gone"/>
+            </LinearLayout>
+            
+            <ToggleButton
+                android:id="@+id/start_ftp_server"
+			        android:layout_width="60dp"
+			        android:layout_height="26dp"
+			        android:layout_gravity="center_vertical"
+			        android:background="@drawable/screenhot_checkbox_iphone"
+			        android:checked="false"
+			        android:text=""
+			        android:textOff=""
+			        
+			        android:textOn="" />
+        </LinearLayout>
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            />
+        
+    </LinearLayout>
+
+</RelativeLayout>

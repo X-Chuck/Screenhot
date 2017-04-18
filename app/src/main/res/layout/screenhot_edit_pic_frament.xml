@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#343434">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/top_memu"/>
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+
+        <!--<LinearLayout -->
+            <!--android:id="@+id/edit_back"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="vertical"-->
+            <!--android:gravity="center_horizontal">-->
+            <!--<TextView -->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center"-->
+                <!--android:text="@string/screenhot_back"/>-->
+        <!--</LinearLayout>-->
+        <!---->
+
+
+        <LinearLayout
+            android:id="@+id/edit_stroke"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/screenhot_pencil"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="画笔"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/edit_graphical"
+           android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/screenhot_square"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="图形"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/edit_words"
+           android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/screenhot_lett_text"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="文字"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/new_edit_words"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:background="@drawable/screenhot_lett_text"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="n文字"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/edit_color"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <com.example.screen.customView.EditColorSelectButton
+                android:id="@+id/edit_custon_color"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="颜色"/>
+        </LinearLayout>
+
+
+         <!--<LinearLayout -->
+            <!--android:id="@+id/edit_save"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:gravity="center_horizontal">-->
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center"-->
+                <!--android:text="@string/screenhot_save"/>-->
+        <!--</LinearLayout>-->
+
+        <!--<ProgressBar-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:id="@+id/progressbar"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--style="?android:attr-->
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/be_edit_pic"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@id/top_memu"
+        android:layout_above="@id/buttonLayout"/>
+    <FrameLayout
+        android:id="@+id/edit_layout"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@id/top_memu"
+        android:layout_above="@id/buttonLayout"/>
+
+    <LinearLayout
+        android:id="@+id/floatLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_above="@id/buttonLayout"
+        android:background="#80000000"
+        android:visibility="gone">
+         <HorizontalScrollView
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:scrollbars="none">
+             <com.example.screen.customView.HorizontListView
+                 android:id="@+id/edit_listView"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="horizontal"
+                 android:gravity="center_vertical">
+
+             </com.example.screen.customView.HorizontListView>
+         </HorizontalScrollView>
+     </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pic_save_mask"
+        android:background="#a6111111"
+        android:clickable="true"
+        android:visibility="gone"
+        >
+        <com.example.screen.customView.CustomPropressBar
+            xmlns:custompropressbar="http://schemas.android.com/apk/res/com.xsj_Screen.screen"
+            android:id="@+id/propressBar"
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:layout_centerInParent="true"
+            custompropressbar:defaultcolor="@color/screenhot_gary"
+            custompropressbar:activitycolor="@color/screenhot_white"
+            />
+    </RelativeLayout>
+</RelativeLayout>

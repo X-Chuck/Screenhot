@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <com.example.screen.customView.AreaScreenView
+        android:id="@+id/areaselect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"/>
+    <com.example.screen.customView.RegionOKButton
+        android:id="@+id/region_ok"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:background="@drawable/screenhot_floatwindow_scrshot"/>
+    <ImageButton 
+        android:id="@+id/region_no"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:background="@drawable/screenhot_floatwindow_scrshot"/>
+    
+    
+
+</RelativeLayout>

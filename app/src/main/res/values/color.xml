@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="screenhot_white">#FFFFFF</color>
+    <color name="screenhot_black">#000000</color>
+    <color name="screenhot_gary">#6c6c6c</color>
+    <color name="screenhot_blue">#62F6FD</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="screenhot_btn_gray">#676767</color>
+    <color name="screenhot_btn_white">#ffffff</color>
+    
+</resources>

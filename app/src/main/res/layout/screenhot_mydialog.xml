@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="150dp"
+    android:background="#00000000" >
+    <LinearLayout 
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        >
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="@string/screenhot_alertPrompt"
+            android:textSize="18sp"
+            android:textColor="@color/screenhot_white"
+            android:background="@color/screenhot_black"/>
+        <EditText 
+            android:id="@+id/dialogText"
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:paddingLeft="5dp"
+            
+            android:hint="@string/screenhot_service_ip"/>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <Button 
+                android:id="@+id/dialogCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/screenhot_cancel"
+                android:background="@drawable/screenhot_shape_blue"
+                android:layout_marginLeft="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="2dp"/>
+            
+            <Button 
+                android:id="@+id/dialogDetermine"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/screenhot_determine"
+                android:layout_marginLeft="2dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/screenhot_shape_blue"/>
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <include layout="@layout/screenhot_settion_title"
+             android:id="@+id/title"/>
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:padding="5dp"
+        android:numColumns="4"
+        android:verticalSpacing="20dp"
+        android:horizontalSpacing="10dp"
+        android:scrollbars="none"
+        android:id="@+id/pic_select_gallery"/>
+    <RelativeLayout
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pic_select_mask">
+        <com.example.screen.customView.CustomPropressBar
+            xmlns:custompropressbar="http://schemas.android.com/apk/res/com.xsj_Screen.screen"
+            android:id="@+id/propressBar"
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

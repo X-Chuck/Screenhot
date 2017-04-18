@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">截屏工具</string>
+    <string name="screenhot_hello_world">Hello world!</string>
+    <string name="screenhot_action_settings">Settings</string>
+    <string name="screenhot_upload_now">立刻上传</string>
+    <string name="screenhot_close_software">退出软件</string>
+    <string name="screenhot_service_ip">服务器ip</string>
+    <string name="screenhot_picture_path">图片路径</string>
+    <string name="screenhot_delete_pic_after_upload">上传后删除本地图片</string>
+    <string name="screenhot_synchronous_upload">同步上传</string>
+    <string name="screenhot_cancel">取消</string>
+    <string name="screenhot_save">保存</string>
+    <string name="screenhot_determine">确定</string>
+    <string name="screenhot_alertPrompt">请输入服务器ip</string>
+    <string name="screenhot_StartFtpServer">开启ftp服务器</string>
+    <string name="screenhot_deletePic">删除图片</string>
+    <string name="screenhot_back">后退</string>
+    <string name="screenhot_edit_pic">编辑图片</string>
+    <string name="screenhot_share">分享</string>
+    <string name="screenhot_return">返回</string>
+
+</resources>
